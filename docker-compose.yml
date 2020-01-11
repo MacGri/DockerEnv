@@ -5,11 +5,11 @@ services:
     build: ./web
     environment:
       - APACHE_RUN_USER=www-data
-      volumes:
+    volumes:
         - ${APP_PATH_HOST}:${APP_PATH_CONRAINER}
-      ports:
+    ports:
         - 8080:80
-      working_dir: ${APP_PATH_CONRAINER}
+    working_dir: ${APP_PATH_CONRAINER}
 
   db:
     image: mariadb

@@ -1,0 +1,9 @@
+#PATHS
+
+DB_PATH_HOST=./databases
+
+DB_PATH_CONRAINER=./var/lib/mysql
+
+APP_PATH_HOST=
+
+APP_PATH_CONRAINER=/var/www/html/

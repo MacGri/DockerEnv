@@ -17,7 +17,7 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: laravelpass
     volumes:
-    - ${DB_PATH_HOST}:${DB_PATH_CONRAINER}
+    - ${DB_PATH_HOST}:/var/lib/mysql
 
   adminer:
     image: adminer:4.7.5
